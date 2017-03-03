@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Season</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        function seasons(season) {
+            if (season == 'qis') {
+                return 'Qış fəsli dekabr, yanvar,fevral aylarından ibarətdir ';
+            } else if (season == 'yaz') {
+                return ' Yaz fəsli mart,aprel,may aylarından ibarətdir';
+            } else if (season == 'yay') {
+                return 'Yay iyun,iyul,avqust aylarından ibarətdir';
+            } else if (season == 'payiz') {
+                    return 'Payız fəsli sentyabr,oktyabr,noyabr aylarından ibarətdir';
+            } else {
+                return 'Belə fəsil adı yoxdur';
+            }
+        }
+
+
+        var result = seasons(prompt(''));
+
+
+        if (result) {
+            document.write(result);
+        } else {
+            document.write('Xəta var');
+        }
+    </script>
+</body>
+
+</html>
